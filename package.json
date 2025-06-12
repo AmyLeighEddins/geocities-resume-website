@@ -1,5 +1,5 @@
 {
-  "name": "retro-resume-website",
+  "name": "geocities-resume-website",
   "private": true,
   "scripts": {
     "dev": "next dev",
