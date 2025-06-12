@@ -10,7 +10,7 @@ import styles from '../styles/Home.module.css'
 export default function Home() {
   const { playing, setPlaying } = useAppContext();
   const musicPlayer = useRef(
-    typeof Audio !== "undefined" ? new Audio("PowerRangers.mp3") : undefined
+    typeof Audio !== "undefined" ? new Audio("/common/PowerRangers.mp3") : undefined
   );
 
   const clickPlay = useCallback(() => {
@@ -31,16 +31,15 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Johmy Beldins Wedding</title>
-        <meta name='description' content='Info about our wedding' />
-        {/* TODO: change icon */}
-        <link rel='icon' href='/favicon.ico' />
+        <title>Amy Eddins</title>
+        <meta name='description' content='Resume website' />
+        <link rel='icon' href='/common/programming-code-cyan.webp' />
       </Head>
 
       <main className={styles.main}>
         
         <h1 className={styles.title}>
-          <Image src='/title.gif' alt='Johmy Beldins' width={1000} height={100} />
+          <Image src='/home/title.gif' alt='Amy Eddins' width={1000} height={100} />
         </h1>
 
         <div className={styles.grid}>

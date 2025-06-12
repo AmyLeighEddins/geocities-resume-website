@@ -10,7 +10,7 @@ export default function Sidebar() {
     <div className={styles.sidebar}>
       <Link href='/'>
         <div>
-          <Image src='/back.gif' alt='back' width={200} height={100} priority={true} />
+          <Image src='/common/back.gif' alt='back' width={200} height={100} priority={true} />
         </div>
       </Link>
       <div className={styles.links}>
@@ -21,7 +21,7 @@ export default function Sidebar() {
         ))}
       </div>
       {ads.map((ad) => (
-        <Image src={`/${ad}.gif`} key={ad} alt={ad} width={'100%'} height={31} priority={true} />
+        <Image src={`/ads/${ad}.gif`} key={ad} alt={ad} width={'100%'} height={31} priority={true} />
       ))}
     </div>
   )
