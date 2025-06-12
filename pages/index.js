@@ -44,10 +44,10 @@ export default function Home() {
 
         <div className={styles.grid}>
           {links.map((link) => (
-            <Link href={link.href} key={link.title}>
+            <Link className={styles.link} href={link.href} key={link.title}>
               <div className={styles.card}>
                 <div className='rainbowText'>
-                  <Image src={link.image} alt={link.title} width={500} height={500} priority={true} />
+                  <Image src={link.image} alt={link.title} width={300} height={300} priority={true} />
                   <div>{link.title}</div>
                 </div>
               </div>

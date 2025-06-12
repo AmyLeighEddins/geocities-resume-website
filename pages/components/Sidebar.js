@@ -15,13 +15,13 @@ export default function Sidebar() {
       </Link>
       <div className={styles.links}>
         {links.map((link) => (
-          <Link href={link.href} key={link.title}>
-            <div className={styles.link}>{link.title}</div>
+          <Link className={styles.link} href={link.href} key={link.title}>
+            <div className={styles.linkText}>{link.title}</div>
           </Link>
         ))}
       </div>
       {ads.map((ad) => (
-        <Image src={`/ads/${ad}.gif`} key={ad} alt={ad} width={'100%'} height={31} priority={true} />
+        <Image src={`/ads/${ad}.gif`} key={ad} alt={ad} width={100} height={31} priority={true} />
       ))}
     </div>
   )

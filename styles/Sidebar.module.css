@@ -13,6 +13,10 @@
 }
 
 .link {
+  text-decoration: none;
+}
+
+.linkText {
   background-color: blueviolet;
   color: chartreuse;
   font-weight: 700;
