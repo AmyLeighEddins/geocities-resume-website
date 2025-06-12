@@ -14,7 +14,7 @@ export default function Experience() {
       <Content title='Experience'>
         <div className={styles.container}>
           {jobs.map((job) => (
-            <div>
+            <div key={`${job.name}-${job.position}`}>
               <div className={styles.titleMain}>
                 <Image src={`/experience/${job.image}`} alt={job.name} width={525} height={350} priority={true} />
               </div>

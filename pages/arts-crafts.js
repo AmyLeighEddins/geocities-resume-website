@@ -25,13 +25,13 @@ export default function ArtsCrafts() {
           {'Filter: '}
           <select className={styles.filter} onChange={(e) => onTypePress(e.target.value)}>
             {types.map((type) => (
-              <option value={type.value}>{type.text}</option>
+              <option key={type.value} value={type.value}>{type.text}</option>
             ))}
           </select>
         </div>
         <div className={styles.container}>
           {creationsFiltered.map((creation) => (
-            <div>
+            <div key={creation.src}>
               <div className={styles.titleImage}>
                 <Image src={`/art/${creation.src}`} alt={creation.title} width={creation.width*100} height={creation.height*100} priority={true} />
               </div>

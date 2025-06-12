@@ -14,7 +14,7 @@ export default function Education() {
       <Content title='Education'>
         <div className={styles.container}>
           {education.map((school) => (
-            <div>
+            <div key={school.name}>
               <div className={styles.titleMain}>
                 <Image src={`/education/${school.image}`} alt={school.name} width={525} height={350} priority={true} />
               </div>
