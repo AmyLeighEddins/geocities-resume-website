@@ -51,6 +51,87 @@ export const types = [
 
 export const creations = [
   {
+    "title": "Unicorn",
+    "src": "unicorn.webp",
+    "description": "Cross stitch of a unicorn I made for a friend. Pattern by @thewitchystitcher. 2025",
+    "date": "2025",
+    "type": "cross-stitch",
+    "width": 3.5,
+    "height": 4
+  },
+  {
+    "title": "Moss & Mushrooms",
+    "src": "moss-and-mushroom.webp",
+    "description": "Stumpwork embroidery of some moss and mushrooms on a tree. Pattern by @syrupstitches. 2025",
+    "date": "2025",
+    "type": "embroidery/sewing",
+    "width": 4,
+    "height": 4
+  },
+  {
+    "title": "Witches & Demons",
+    "src": "witches-and-demons.webp",
+    "description": "Cross stitch of witches and demons. Pattern by @nightspiritstudio. 2025",
+    "date": "2025",
+    "type": "cross-stitch",
+    "width": 5,
+    "height": 3.5
+  },
+  {
+    "title": "Knight Helmet and Roses",
+    "src": "knight-helmet.webp",
+    "description": "Painting of a knight helmet and roses. 2025",
+    "date": "2025",
+    "type": "painting",
+    "width": 3,
+    "height": 4
+  },
+  {
+    "title": "Medieval Royalty",
+    "src": "royalty.webp",
+    "description": "Painting of some medieval royalty. 2025",
+    "date": "2025",
+    "type": "painting",
+    "width": 3,
+    "height": 4
+  },
+  {
+    "title": "Moebius's 40 Days in the Desert (3)",
+    "src": "40daysindesert3.webp",
+    "description": "Another embroidery of a piece by Moebius from the book 40 Days in the Desert. 2024",
+    "date": "2024",
+    "type": "embroidery/sewing",
+    "width": 3,
+    "height": 4
+  },
+  {
+    "title": "Chickadee",
+    "src": "chickadee.webp",
+    "description": "Embroidery of a Chickadee for my grandma. Pattern by @trishburrembroidery 2024",
+    "date": "2024",
+    "type": "embroidery/sewing",
+    "width": 3,
+    "height": 4
+  },
+  {
+    "title": "Final Fantasy XVI",
+    "src": "final-fantasy.webp",
+    "description": "Perler bead art with a pour paint background of character from Final Fantasy XVI. 2024",
+    "date": "2024",
+    "type": "perler",
+    "width": 4,
+    "height": 3
+  },
+  {
+    "title": "Toad",
+    "src": "toad.webp",
+    "description": "Embroidery of a toad for a friend. Pattern by @theembroideredalmanac. 2023",
+    "date": "2023",
+    "type": "embroidery/sewing",
+    "width": 3,
+    "height": 4
+  },
+  {
     "title": "Wedding Party Gifts",
     "src": "wedding-party-gifts.webp",
     "description": "Embroideries I made for my Bridesmaids. Patterns by @thesmallwoods. 2023",
