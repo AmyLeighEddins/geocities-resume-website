@@ -7,7 +7,7 @@ import { jobs } from '../data/experience.js';
 import Sidebar from './components/Sidebar.js';
 import Content from './components/Content.js';
 
-export default function Registry() {
+export default function Experience() {
   return (
     <div className='subPage'>
       <Sidebar />

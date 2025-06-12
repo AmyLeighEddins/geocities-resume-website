@@ -7,7 +7,7 @@ import { education } from '../data/education.js';
 import Sidebar from './components/Sidebar.js';
 import Content from './components/Content.js';
 
-export default function Details() {
+export default function Education() {
   return (
     <div className='subPage'>
       <Sidebar />

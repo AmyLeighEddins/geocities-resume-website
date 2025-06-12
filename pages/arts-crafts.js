@@ -9,7 +9,7 @@ import { creations, types } from '../data/arts-crafts.js';
 import Sidebar from './components/Sidebar.js';
 import Content from './components/Content.js';
 
-export default function Party() {
+export default function ArtsCrafts() {
   const [creationsFiltered, setCreationsFiltered] = useState(creations);
 
   const onTypePress = (type) => {
