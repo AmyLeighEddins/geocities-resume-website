@@ -21,7 +21,7 @@ export default function Sidebar() {
         ))}
       </div>
       {ads.map((ad) => (
-        <Image src={`/ads/${ad}.gif`} key={ad} alt={ad} width={100} height={31} priority={true} />
+        <Image src={`/ads/${ad}.gif`} unoptimized key={ad} alt={ad} width={100} height={31} priority={true} />
       ))}
     </div>
   )

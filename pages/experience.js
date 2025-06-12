@@ -18,7 +18,7 @@ export default function Experience() {
               <div className={styles.titleMain}>
                 <Image src={`/experience/${job.image}`} alt={job.name} width={525} height={350} priority={true} />
               </div>
-              <Image src={`/experience/${job.gif.name}.gif`} alt='on' width={job.gif.width * 100} height={job.gif.height * 100} priority={true} />
+              <Image src={`/experience/${job.gif.name}.gif`} unoptimized alt={job.name} width={job.gif.width * 100} height={job.gif.height * 100} priority={true} />
               {job.extraInfo && <div className={styles.descLrg}>{job.extraInfo}</div>}
               <div className={styles.descMed}>{job.dates}</div>
               <div className={styles.descMed}>{job.location}</div>

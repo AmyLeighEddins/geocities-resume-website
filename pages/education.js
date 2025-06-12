@@ -18,7 +18,7 @@ export default function Education() {
               <div className={styles.titleMain}>
                 <Image src={`/education/${school.image}`} alt={school.name} width={525} height={350} priority={true} />
               </div>
-              <Image src={`/education/${school.gif.name}.gif`} alt='on' width={school.gif.width * 100} height={school.gif.height * 100} priority={true} />
+              <Image src={`/education/${school.gif.name}.gif`} unoptimized alt={school.name} width={school.gif.width * 100} height={school.gif.height * 100} priority={true} />
               <div className={styles.descMed}>{school.dates}</div>
               <div className={styles.descMed}>{school.location}</div>
               <div className={styles.descMed}>{school.degree}</div>
