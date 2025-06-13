@@ -1,4 +1,4 @@
 export const aboutMe = [
   "I might have grown up in a small town called Slapout in Alabama, but I'm not very southern. Maybe I'll leave Alabama at some point, but I'm enjoying the liberal city of Birmingham while being close to family and friends. I like doom metal, outrun, comics, dragons, horror, and video/board/tabletop games. I love crafting: painting, perler beads, embroidery, you name it. I am addicted to buying art (mostly local) and go to a lot of art shows. I have a silly dog with a lazy eye and a cat that plays fetch when he's in the mood.",
-  "I'm currently working as a Senior Software Developer at Unosquare where I'm focused mainly on front-end mobile development using React Native and some back-end with NodeJS. I like programming since I get to solve puzzles all day. Sometimes it's frustrating, but easy is boring."
+  "I'm currently working as a Senior Software Developer at Unosquare where I'm focused mainly on front-end mobile development using React Native and some back-end with Node.js. I like programming since I get to solve puzzles all day. Sometimes it's frustrating, but easy is boring."
 ]

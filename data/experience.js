@@ -13,8 +13,8 @@ export const jobs = [
       height: 1.5,
       width: 4,
     },
-    "description": "I'm currently working with TypeScript, React Native, and GraphQL on a wide variety of projects and helping with the Ruby on Rails backend when I can.",
-    "title": "Software Developer"
+    "description": "I'm mainly working on a big project using React Native with TypeScript and getting more backend experience with Node.js. While also working on other smaller web projects using Next.js.",
+    "title": "Senior Software Engineer"
   },
   {
     "id": "1",
