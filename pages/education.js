@@ -13,7 +13,7 @@ export default function Education() {
       <Sidebar />
       <Content title="Education">
         <div className={styles.container}>
-          {education.map((school) => (
+          {education.map((school, index) => (
             <div key={school.name}>
               <div className={styles.titleMain}>
                 <Image
@@ -21,7 +21,8 @@ export default function Education() {
                   alt={school.name}
                   width={525}
                   height={350}
-                  priority={true}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  priority={index < 2}
                 />
               </div>
               <Image
@@ -30,7 +31,7 @@ export default function Education() {
                 alt={school.name}
                 width={school.gif.width * 100}
                 height={school.gif.height * 100}
-                priority={true}
+                priority={index < 2}
               />
               <div className={styles.descMed}>{school.dates}</div>
               <div className={styles.descMed}>{school.location}</div>

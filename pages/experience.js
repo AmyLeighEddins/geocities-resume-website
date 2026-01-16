@@ -13,7 +13,7 @@ export default function Experience() {
       <Sidebar />
       <Content title="Experience">
         <div className={styles.container}>
-          {jobs.map((job) => (
+          {jobs.map((job, index) => (
             <div key={`${job.name}-${job.position}`}>
               <div className={styles.titleMain}>
                 <Image
@@ -21,7 +21,8 @@ export default function Experience() {
                   alt={job.name}
                   width={525}
                   height={350}
-                  priority={true}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  priority={index < 2}
                 />
               </div>
               <Image
@@ -30,7 +31,7 @@ export default function Experience() {
                 alt={job.name}
                 width={job.gif.width * 100}
                 height={job.gif.height * 100}
-                priority={true}
+                priority={index < 2}
               />
               {job.extraInfo && (
                 <div className={styles.descLrg}>{job.extraInfo}</div>
