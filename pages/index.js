@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import React, { useEffect, useRef, useCallback } from 'react';
+import React, { useEffect, useRef, useCallback, useState } from 'react';
 
 import { useAppContext } from '../context/context';
 import { links } from '../data/common';
@@ -9,6 +9,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const { playing, setPlaying } = useAppContext();
+  const [loadedGifs, setLoadedGifs] = useState({});
   const musicPlayer = useRef(
     typeof Audio !== 'undefined'
       ? new Audio('/common/PowerRangers.mp3')
@@ -29,6 +30,16 @@ export default function Home() {
       document.removeEventListener('click', playMusic);
     }
   }, [clickPlay]);
+
+  useEffect(() => {
+    links.forEach((link) => {
+      const img = new window.Image();
+      img.onload = () => {
+        setLoadedGifs((prev) => ({ ...prev, [link.title]: true }));
+      };
+      img.src = link.image;
+    });
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -54,7 +65,7 @@ export default function Home() {
               <div className={styles.card}>
                 <div className="rainbowText">
                   <Image
-                    src={link.image}
+                    src={loadedGifs[link.title] ? link.image : link.staticImage}
                     alt={link.title}
                     width={300}
                     height={300}
