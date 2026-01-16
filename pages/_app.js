@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=0.4" />
+        <link rel="preload" href="/common/me-static.webp" as="image" />
       </Head>
       <AppWrapper>
         <Component {...pageProps} />
