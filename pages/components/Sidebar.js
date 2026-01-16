@@ -8,9 +8,15 @@ import { ads } from '../../data/sidebar';
 export default function Sidebar() {
   return (
     <div className={styles.sidebar}>
-      <Link href='/'>
+      <Link href="/">
         <div>
-          <Image src='/common/back.gif' alt='back' width={200} height={100} priority={true} />
+          <Image
+            src="/common/back.gif"
+            alt="back"
+            width={200}
+            height={100}
+            priority={true}
+          />
         </div>
       </Link>
       <div className={styles.links}>
@@ -21,8 +27,16 @@ export default function Sidebar() {
         ))}
       </div>
       {ads.map((ad) => (
-        <Image src={`/ads/${ad}.gif`} unoptimized key={ad} alt={ad} width={100} height={31} priority={true} />
+        <Image
+          src={`/ads/${ad}.gif`}
+          unoptimized
+          key={ad}
+          alt={ad}
+          width={100}
+          height={31}
+          priority={true}
+        />
       ))}
     </div>
-  )
+  );
 }

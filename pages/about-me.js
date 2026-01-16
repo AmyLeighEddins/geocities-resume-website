@@ -9,12 +9,18 @@ import Content from './components/Content.js';
 
 export default function AboutMe() {
   return (
-    <div className='subPage'>
+    <div className="subPage">
       <Sidebar />
-      <Content title='About Me'>
+      <Content title="About Me">
         <div className="colorParagraph">
           <div className={styles.titleMain}>
-            <Image src={`/aboutMe/Headshot.jpg`} alt={'Amy Eddins'} width={480} height={500} priority={true} />
+            <Image
+              src={`/aboutMe/Headshot.jpg`}
+              alt={'Amy Eddins'}
+              width={480}
+              height={500}
+              priority={true}
+            />
           </div>
           {aboutMe.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
@@ -22,5 +28,5 @@ export default function AboutMe() {
         </div>
       </Content>
     </div>
-  )
+  );
 }

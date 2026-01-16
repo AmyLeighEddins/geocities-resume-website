@@ -9,14 +9,20 @@
 }
 
 html,
-body, 
+body,
 button {
   padding: 0;
   margin: 0;
   font-family: "Comic Sans MS", "Comic Sans", "Comic Sans MS webfont", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-image: url('/common/me.gif');
+  background-image: url('/common/me-static.webp');
   cursor: url('/common/cursor.webp'), auto;
+}
+
+html.animated-bg,
+html.animated-bg body,
+html.animated-bg button {
+  background-image: url('/common/me.gif');
 }
 
 html {

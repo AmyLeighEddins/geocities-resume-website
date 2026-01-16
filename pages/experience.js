@@ -9,17 +9,32 @@ import Content from './components/Content.js';
 
 export default function Experience() {
   return (
-    <div className='subPage'>
+    <div className="subPage">
       <Sidebar />
-      <Content title='Experience'>
+      <Content title="Experience">
         <div className={styles.container}>
           {jobs.map((job) => (
             <div key={`${job.name}-${job.position}`}>
               <div className={styles.titleMain}>
-                <Image src={`/experience/${job.image}`} alt={job.name} width={525} height={350} priority={true} />
+                <Image
+                  src={`/experience/${job.image}`}
+                  alt={job.name}
+                  width={525}
+                  height={350}
+                  priority={true}
+                />
               </div>
-              <Image src={`/experience/${job.gif.name}.gif`} unoptimized alt={job.name} width={job.gif.width * 100} height={job.gif.height * 100} priority={true} />
-              {job.extraInfo && <div className={styles.descLrg}>{job.extraInfo}</div>}
+              <Image
+                src={`/experience/${job.gif.name}.gif`}
+                unoptimized
+                alt={job.name}
+                width={job.gif.width * 100}
+                height={job.gif.height * 100}
+                priority={true}
+              />
+              {job.extraInfo && (
+                <div className={styles.descLrg}>{job.extraInfo}</div>
+              )}
               <div className={styles.descMed}>{job.dates}</div>
               <div className={styles.descMed}>{job.location}</div>
               <div className={styles.descMed}>{job.title}</div>
@@ -29,5 +44,5 @@ export default function Experience() {
         </div>
       </Content>
     </div>
-  )
+  );
 }
