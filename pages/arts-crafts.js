@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
 import Image from 'next/image';
 
@@ -15,25 +15,37 @@ export default function ArtsCrafts() {
   const onTypePress = (type) => {
     if (!type) setCreationsFiltered(creations);
     else setCreationsFiltered(creations.filter((image) => image.type === type));
-  }
+  };
 
   return (
-    <div className='subPage'>
+    <div className="subPage">
       <Sidebar />
-      <Content title='Arts & Crafts'>
+      <Content title="Arts & Crafts">
         <div>
           {'Filter: '}
-          <select className={styles.filter} onChange={(e) => onTypePress(e.target.value)}>
+          <select
+            className={styles.filter}
+            onChange={(e) => onTypePress(e.target.value)}
+          >
             {types.map((type) => (
-              <option key={type.value} value={type.value}>{type.text}</option>
+              <option key={type.value} value={type.value}>
+                {type.text}
+              </option>
             ))}
           </select>
         </div>
         <div className={styles.container}>
-          {creationsFiltered.map((creation) => (
+          {creationsFiltered.map((creation, index) => (
             <div key={creation.src}>
               <div className={styles.titleImage}>
-                <Image src={`/art/${creation.src}`} alt={creation.title} width={creation.width*100} height={creation.height*100} priority={true} />
+                <Image
+                  src={`/art/${creation.src}`}
+                  alt={creation.title}
+                  width={creation.width * 100}
+                  height={creation.height * 100}
+                  sizes="(max-width: 768px) 100vw, 400px"
+                  priority={index < 3}
+                />
               </div>
               <div className={styles.descMed}>{creation.title}</div>
               <div className={styles.descSml}>{creation.description}</div>
@@ -42,5 +54,5 @@ export default function ArtsCrafts() {
         </div>
       </Content>
     </div>
-  )
+  );
 }
