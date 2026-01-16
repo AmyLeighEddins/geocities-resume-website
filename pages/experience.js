@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 import styles from '../styles/Pages.module.css';
 
@@ -8,6 +9,18 @@ import Sidebar from './components/Sidebar.js';
 import Content from './components/Content.js';
 
 export default function Experience() {
+  const [loadedGifs, setLoadedGifs] = useState({});
+
+  useEffect(() => {
+    jobs.forEach((job) => {
+      const img = new window.Image();
+      img.onload = () => {
+        setLoadedGifs((prev) => ({ ...prev, [job.gif.name]: true }));
+      };
+      img.src = `/experience/${job.gif.name}.gif`;
+    });
+  }, []);
+
   return (
     <div className="subPage">
       <Sidebar />
@@ -26,7 +39,7 @@ export default function Experience() {
                 />
               </div>
               <Image
-                src={`/experience/${job.gif.name}.gif`}
+                src={loadedGifs[job.gif.name] ? `/experience/${job.gif.name}.gif` : `/experience/${job.gif.name}-static.webp`}
                 unoptimized
                 alt={job.name}
                 width={job.gif.width * 100}

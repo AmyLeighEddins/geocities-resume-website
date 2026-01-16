@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { useState, useEffect } from 'react';
 
 import styles from '../styles/Pages.module.css';
 
@@ -8,6 +9,18 @@ import Sidebar from './components/Sidebar.js';
 import Content from './components/Content.js';
 
 export default function Education() {
+  const [loadedGifs, setLoadedGifs] = useState({});
+
+  useEffect(() => {
+    education.forEach((school) => {
+      const img = new window.Image();
+      img.onload = () => {
+        setLoadedGifs((prev) => ({ ...prev, [school.gif.name]: true }));
+      };
+      img.src = `/education/${school.gif.name}.gif`;
+    });
+  }, []);
+
   return (
     <div className="subPage">
       <Sidebar />
@@ -26,7 +39,7 @@ export default function Education() {
                 />
               </div>
               <Image
-                src={`/education/${school.gif.name}.gif`}
+                src={loadedGifs[school.gif.name] ? `/education/${school.gif.name}.gif` : `/education/${school.gif.name}-static.webp`}
                 unoptimized
                 alt={school.name}
                 width={school.gif.width * 100}
