@@ -15,10 +15,11 @@ export default function AboutMe() {
         <div className="colorParagraph">
           <div className={styles.titleMain}>
             <Image
-              src={`/aboutMe/Headshot.jpg`}
+              src={`/aboutMe/Headshot.webp`}
               alt={'Amy Eddins'}
               width={480}
               height={500}
+              sizes="(max-width: 768px) 100vw, 480px"
               priority={true}
             />
           </div>
