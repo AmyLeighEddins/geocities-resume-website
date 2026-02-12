@@ -20,6 +20,20 @@
 
 .titleImage {
   margin: 5rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.titleImage img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+
+@media (min-width: 1200px) {
+  .titleImage img {
+    max-width: 800px;
+  }
 }
 
 .titleMain {

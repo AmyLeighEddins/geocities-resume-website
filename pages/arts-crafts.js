@@ -43,7 +43,7 @@ export default function ArtsCrafts() {
                   alt={creation.title}
                   width={creation.width * 100}
                   height={creation.height * 100}
-                  sizes="(max-width: 768px) 100vw, 400px"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 800px"
                   priority={index < 3}
                 />
               </div>

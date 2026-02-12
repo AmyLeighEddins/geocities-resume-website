@@ -51,6 +51,16 @@ export const types = [
 
 export const creations = [
   {
+    title: 'Bloodborne Hunter',
+    src: 'bloodborne.webp',
+    description:
+      'Embroidery of the main character from Bloodborne. Art by @eriklyart. 2026',
+    date: '2026',
+    type: 'embroidery/sewing',
+    width: 4,
+    height: 4,
+  },
+  {
     title: 'Medieval Skeleton',
     src: 'medieval-skeleton.webp',
     description:
@@ -149,10 +159,10 @@ export const creations = [
     height: 4,
   },
   {
-    title: 'Wedding Party Gifts',
+    title: 'Snake and Rainbow embroideries',
     src: 'wedding-party-gifts.webp',
     description:
-      'Embroideries I made for my Bridesmaids. Patterns by @thesmallwoods. 2023',
+      'Embroideries I made for some friends. Patterns by @thesmallwoods. 2023',
     date: '2023',
     type: 'embroidery/sewing',
     width: 3,
@@ -560,16 +570,6 @@ export const creations = [
     type: 'embroidery/sewing',
     width: 3,
     height: 4,
-  },
-  {
-    title: 'Stardew Valley',
-    src: 'stardew-valley.webp',
-    description:
-      'Perler bead art of my family in Stardew Valley characters. 2020',
-    date: '2020',
-    type: 'perler',
-    width: 4,
-    height: 3,
   },
   {
     title: 'Sabin',
