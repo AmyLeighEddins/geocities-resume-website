@@ -47,6 +47,7 @@
   font-size: 29px;
   font-weight: 700;
   padding-bottom: 1rem;
+  text-align: center;
 }
 
 .descMed {
@@ -70,7 +71,7 @@
   margin: 2rem;
 }
 
-.filter {
+.textBorder {
   background-color: darkmagenta;
   padding: 5px;
   border-color: blueviolet;
@@ -81,4 +82,48 @@
   font-family: "Comic Sans MS", "Comic Sans", "Comic Sans MS webfont", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen;
 }
 
+.skillGroup {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
 
+.skillList {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.skillList .textBorder {
+  border-style: solid;
+  text-indent: 0;
+  text-align: center;
+  transition: transform 0.1s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skillList .textBorder:hover {
+  color: #ffff00;
+  box-shadow: 0 0 10px 2px deeppink;
+  animation: jiggle 0.3s linear infinite;
+}
+
+.jiggleTitle {
+  margin-top: 3rem;
+  color: #ffff00;
+  animation: jiggle 0.4s linear infinite;
+}
+
+@keyframes jiggle {
+  0% {
+    transform: rotate(-4deg) scale(1.12);
+  }
+  50% {
+    transform: rotate(4deg) scale(1.12);
+  }
+  100% {
+    transform: rotate(-4deg) scale(1.12);
+  }
+}

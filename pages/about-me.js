@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import styles from '../styles/Pages.module.css';
 
-import { aboutMe } from '../data/about-me.js';
+import { aboutMe, skills } from '../data/about-me.js';
 
 import Sidebar from './components/Sidebar.js';
 import Content from './components/Content.js';
@@ -25,6 +25,17 @@ export default function AboutMe() {
           </div>
           {aboutMe.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>
+          ))}
+          <div className={`${styles.descLrg} ${styles.jiggleTitle}`}>Skills</div>
+          {skills.map((group) => (
+            <div key={group.category} className={styles.skillGroup}>
+              <div className={styles.descSml}>{group.category}</div>
+              <ul className={styles.skillList}>
+                {group.items.map((item) => (
+                  <li key={item} className={styles.textBorder}>{item}</li>
+                ))}
+              </ul>
+            </div>
           ))}
         </div>
       </Content>

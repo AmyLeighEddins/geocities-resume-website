@@ -24,7 +24,7 @@ export default function ArtsCrafts() {
         <div>
           {'Filter: '}
           <select
-            className={styles.filter}
+            className={styles.textBorder}
             onChange={(e) => onTypePress(e.target.value)}
           >
             {types.map((type) => (

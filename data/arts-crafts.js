@@ -51,6 +51,16 @@ export const types = [
 
 export const creations = [
   {
+    title: 'Hollow Knight',
+    src: 'hollow-knight.webp',
+    description:
+      'Perler bead art with a splatter paint background of the Knight from Hollow Knight. 2026',
+    date: '2026',
+    type: 'perler',
+    width: 4,
+    height: 3,
+  },
+  {
     title: 'Bloodborne Hunter',
     src: 'bloodborne.webp',
     description:

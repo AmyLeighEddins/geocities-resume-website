@@ -13,7 +13,7 @@ export const jobs = [
       height: 1.5,
       width: 4,
     },
-    "description": "I'm mainly working on a big project using React Native with TypeScript and getting more backend experience with Node.js. While also working on other smaller web projects using Next.js.",
+    "description": "Full-stack feature development across React Native mobile apps, React web apps, and backends for client products using TypeScript, React, React Native, Next.js, AWS, Azure, GraphQL, and Ruby on Rails. Built offline-first mobile features with device-hardware integrations, APIs, and a custom SQL Server to MongoDB sync service feeding on-device data via PowerSync.",
     "title": "Senior Software Engineer"
   },
   {
